@@ -1,4 +1,4 @@
-# MY Music Tutor
+# My Music Tutor
 
 An Cross-Platform application catered toward the music community. 
 

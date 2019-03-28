@@ -1,4 +1,25 @@
 {
+  "name": "FlowScripts",
+  "version": "1.0.0",
+  "devDependencies": {
+    "flow-bin": "^0.95.2"
+  },
+  "scripts": {
+    "flow": "flow"
+  },
+},
+
+
+{
+  "name": "MAS",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build"
+  },
+},
+
+{
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",

@@ -1,7 +1,113 @@
-const { gql } = require('apollo-server');
+schema {
+"""
+"""
 
-const typeDefs = gql``
+	type Author {
+	id : Int!
+	firstName : String
+	lastName : String
+	}
 
-module.exports = typeDefs;
+	type Users( requires @ID) {
+	 id: ID! @unique
+	  title: String!
+	  published: Boolean! @default(value: "false")
+	  author: User
+	}
 
 
+
+	"""
+	type object node
+	"""
+	type Admin( requires @ID) {
+	 id: ID! @unique
+	  title: String!
+	  published: Boolean! @default(value: "false")
+	  author: User
+
+	}
+
+
+	type Post {
+	  id: ID! @unique
+	  title: String!
+	  published: Boolean! @default(value: "false")
+	  author: User
+	}
+
+	type sessionID(requires @ID) {
+		cookieTXT: ID! @unique
+		passwrd: ID! @uniwue
+
+	  }
+
+	
+	"""
+	type object node
+	"""
+	type Guests (requires @ID) {
+	  type Query {
+	  UserID: ID!
+	  }
+
+	  
+	  type Mutate {  
+	    echo "logged in" 
+	    sessionID = UserID;
+	  } 
+	  type Subscription {
+	    
+	  }
+	} 
+
+	"""
+	"""
+	type Tutors {
+	  union time: String
+	 
+	}
+
+
+	Mutate addGuest  {
+	}
+
+
+	"""
+	interface products {
+	  query specificToProducts(last:3) {
+	  }
+	}
+
+	"""
+	interface schedules {
+	  query specificToSchedules(last: 3) {
+	  }
+	}
+
+	"""
+
+	interface songs {
+	  enum caption : String; 
+	  enum pdfURL : ID;
+	  enum heroImage : String;
+	  enum title : String;
+	  enum description : String;
+	  enum publishedBy : User
+	  
+	  Query specificToSongs(last: 3) {
+	  }
+	}
+
+	"""
+
+
+
+	
+
+	"""
+	Query default(first: 5) {
+	    
+	}
+
+}

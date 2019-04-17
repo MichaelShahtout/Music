@@ -1,0 +1,26 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "An Cross-Platform application catered toward the music community.",
+  "main": "App (2).js",
+  "dependencies": {
+    "@99xt/first-born": "^1.0.3",
+    "formik": "^1.5.2",
+    "react": "^16.8.6",
+    "react-native": "^0.59.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelShahtout/Music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelShahtout/Music/issues"
+  },
+  "homepage": "https://github.com/MichaelShahtout/Music#readme"
+}

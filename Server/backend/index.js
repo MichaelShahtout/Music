@@ -44,4 +44,4 @@ const updatedUser = await prisma
   .posts()
 }
  
-main().catch(e => console.error(e))n
+main().catch(e => console.error(e));

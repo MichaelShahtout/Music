@@ -32,17 +32,23 @@ export default class ProfileScreen extends React.Component {
                 alignItems: 'stretch',
             }}>
                 <View style={styles.topDiv}> 
-                    <ImageBackground source="./components/images/users/${usr}.jpg" position="CENTER">
+                    <ImageBackground source={ false ? 
+                            require("../components/users/images/${usr}.png"):
+                            require("../componets/users/images/profile.png");                        }
+                      } 
+                    position="CENTER">
                         <Text style={styles.Text}>
-                            ${usrName}
+                            ${name}
                         </Text>
 
                     </ImageBackground>
                     </View>
 
-                    <Text> 
-                        Sign Out
-                    </Text>
+                   onPressSignOut = () => {
+                    <Route to={/api/signout}> 
+                        Signing Out
+                    </Route>
+                   } 
                 <TouchableHighlight style={styles.ButtonContainer}>
                     <Image style={styles.button} source={{ uri: { require('whiteImagee') } } >
                         </Image>

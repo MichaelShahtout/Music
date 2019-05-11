@@ -1,3 +1,18 @@
+/*
+My Music Tutor
+Made by Ryan Niemi
+Date: 5/9/19
+Version: 1.0.0
+Description:
+    A component for a profile screen. It has a blob as a background image,
+    a picture of you,
+    your username,
+    a brief description/content
+    a text showing that you are logged in,
+    a link to return to home 
+*/
+
+
 import React, {Component} from 'react';
 import {
     Image,
@@ -29,9 +44,11 @@ export default class ProfileScreen extends React.Component {
                         ${usrName}
                     </Text>
                     <Text styles="Text">
-                        You are succesfully logged in!
+                        You are logged in!
                     </Text>
-
+                    <Text styles="Text">
+                    {user.component}
+                    </Text>
                     <Route to="../home">
                     Return to home
                     </Route>

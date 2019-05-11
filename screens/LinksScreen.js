@@ -1,3 +1,12 @@
+/*
+My Music Tutor
+Made by Ryan Niemi
+Date: 5/9/19
+Description:
+  A site for seeing listings of dates you have booked 
+*/
+
+
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';

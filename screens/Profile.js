@@ -1,5 +1,13 @@
 'use strict';
 
+/*
+My Music Tutor
+Made by Ryan Niemi
+Date: 5/9/19
+Description:
+    Similar to the login-signup page, except it better designed and has a sign out feature that when the button is clicked, it will render to say signing out
+*/
+
 
 import React from 'react';
 import {
@@ -50,7 +58,7 @@ export default class ProfileScreen extends React.Component {
                     </Route>
                    } 
                 <TouchableHighlight style={styles.ButtonContainer}>
-                    <Image style={styles.button} source={{ uri: { require('whiteImagee') } } >
+                    <Image style={styles.button} source={{ uri: { require('whiteImage') } } >
                         </Image>
                     </TouchableHighlight>
                 <Button onPress={onPressSignOut} title="Sign Out" accessibilityLabel="Sign out of your account" style={{ background-image: radial-gradient(circle, #34e342, #00d7ae, #00c0ff, #009dff, #6d61ff),}}>
@@ -192,7 +200,7 @@ const styles = StyleSheet.create({
              height: 128,
              width: 128,
             borderRadius: 64,
-            background - image: radial - gradient(circle, #34e342, #00d7ae, #00c0ff, #009dff, #6d61ff),
+            background-image: radial-gradient(circle, #34e342, #00d7ae, #00c0ff, #009dff, #6d61ff),
     },
     button: {
             height: 128,

@@ -6,8 +6,13 @@
   "dependencies": {
     "@99xt/first-born": "^1.0.3",
     "formik": "^1.5.2",
+    "haversine": "^1.1.1",
     "react": "^16.8.6",
-    "react-native": "^0.59.4"
+    "react-native": "^0.59.4",
+    "react-native-cli": "^2.0.1",
+    "react-native-maps": "^0.24.2",
+    "react-native-slideable-calendar-strip": "^0.3.2",
+    "react-native-touch-id": "^4.4.1"
   },
   "devDependencies": {},
   "scripts": {

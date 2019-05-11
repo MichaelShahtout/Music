@@ -1,3 +1,12 @@
+/*
+My Music Tutor
+Made by Ryan Niemi
+Date: 5/9/19
+Description:
+	Components for each form of data being collected, such as names, age, instruments, zip code, image, content
+*/
+
+
 import React, {Component, Stylesheet} from 'react';
 import ReactNative, {Text, View, TextInput, AppRegistry} from 'react-native';
 import { Formik } from 'formik';
@@ -151,11 +160,11 @@ let styles = Stylesheet.create(
 
 AppRegistry.registerApp( 
 	
-		render(
+		render() {
 			return {
 				<App>
 					<View> 
-						<ImageBackground> 	
+						<ImageBackground source={require("../components/blob-shape")}> 	
 							<FirstName /> 
 							<Lastname /> 
 							<Instruments /> 
@@ -169,5 +178,5 @@ AppRegistry.registerApp(
 					</View> 
 				</App>
 			}
-	)
+		}
 );

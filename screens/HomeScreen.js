@@ -1,8 +1,20 @@
+/*
+My Music Tutor
+Made by Ryan Niemi
+Date: 5/10/19
+Description:
+  A homescreen for users when they first install the app. It helps them to login and signup. It also walks them through what the app is.
+  It has a welcome image gif of a person doing homework
+  It allows you to get everything filled out, and then finally lets you book a tutor. AKA the tutorial
+*/
+
+
 import React from 'react';
 import {
   Image,
   Platform,
   ScrollView,
+  BackgroundImage,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -22,7 +34,7 @@ export default class HomeScreen extends React.Component {
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={styles.welcomeContainer}>
-            <Image
+            <BackgroundImage
               source={
                require('../components/homeworkGif.gif');
               }

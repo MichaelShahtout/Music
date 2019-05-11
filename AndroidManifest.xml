@@ -1,0 +1,3 @@
+
+<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+

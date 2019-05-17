@@ -1,0 +1,16 @@
+%{
+  "absinthe": {:hex, :absinthe, "1.3.2", "1d16ee5ceeb8b90e37f936b924caacc099b9da667e9c7e6a4d729f41197123d4", [:mix], [], "hexpm"},
+  "absinthe_ecto": {:hex, :absinthe_ecto, "0.1.3", "420b68129e79fe4571a4838904ba03e282330d335da47729ad52ffd7b8c5fcb1", [:mix], [{:absinthe, "~> 1.3.0 or ~> 1.4.0", [hex: :absinthe, repo: "hexpm", optional: false]}, {:ecto, ">= 0.0.0", [hex: :ecto, repo: "hexpm", optional: false]}], "hexpm"},
+  "absinthe_plug": {:hex, :absinthe_plug, "1.3.0", "52bcf04fc95463843cbd78994f7dd9b587b299c7065081582d37d59cdcc68d98", [:mix], [{:absinthe, "~> 1.3.0", [hex: :absinthe, repo: "hexpm", optional: false]}, {:plug, "~> 1.3.2 or ~> 1.4", [hex: :plug, repo: "hexpm", optional: false]}], "hexpm"},
+  "cowboy": {:git, "https://github.com/ninenines/cowboy.git", "572d38082f177a9b975153569b928375a5902b48", [tag: "2.2.0"]},
+  "cowlib": {:git, "https://github.com/elixir-grpc/cowlib.git", "1cc32e27d917bfe615da6957006fd9f8d6e604bd", [tag: "grpc-2.7.3"]},
+  "decimal": {:hex, :decimal, "1.7.0", "30d6b52c88541f9a66637359ddf85016df9eb266170d53105f02e4a67e00c5aa", [:mix], [], "hexpm"},
+  "ecto": {:hex, :ecto, "3.1.4", "69d852da7a9f04ede725855a35ede48d158ca11a404fe94f8b2fb3b2162cd3c9", [:mix], [{:decimal, "~> 1.6", [hex: :decimal, repo: "hexpm", optional: false]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: true]}], "hexpm"},
+  "grpc": {:git, "https://github.com/tony612/grpc-elixir.git", "cb3d7b351daa530ff7390acb9eaa27976dd410c6", []},
+  "gun": {:git, "https://github.com/elixir-grpc/gun.git", "8bf6e838c51ce792236db0a9d9cb2513f6cc6b12", [tag: "grpc-1.3.0"]},
+  "mime": {:hex, :mime, "1.3.1", "30ce04ab3175b6ad0bdce0035cba77bba68b813d523d1aac73d9781b4d193cf8", [:mix], [], "hexpm"},
+  "plug": {:hex, :plug, "1.8.0", "9d2685cb007fe5e28ed9ac27af2815bc262b7817a00929ac10f56f169f43b977", [:mix], [{:mime, "~> 1.0", [hex: :mime, repo: "hexpm", optional: false]}, {:plug_crypto, "~> 1.0", [hex: :plug_crypto, repo: "hexpm", optional: false]}, {:telemetry, "~> 0.4", [hex: :telemetry, repo: "hexpm", optional: true]}], "hexpm"},
+  "plug_crypto": {:hex, :plug_crypto, "1.0.0", "18e49317d3fa343f24620ed22795ec29d4a5e602d52d1513ccea0b07d8ea7d4d", [:mix], [], "hexpm"},
+  "protobuf": {:hex, :protobuf, "0.6.1", "3ae3ca63d12d1a8c5b10c2e5fbc5145dccbff842ccd541109b74b20b631cea3b", [:mix], [], "hexpm"},
+  "ranch": {:git, "https://github.com/ninenines/ranch.git", "c7dcc9cb1362e397d8d3d184b0643f2ca50c032e", []},
+}

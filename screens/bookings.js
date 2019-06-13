@@ -26,4 +26,6 @@ class DatesBooked extends React.Component {
 			<Calendar />
 		</View>
 	);
-}
+};
+
+AppRegistry.RegisterComponent(DatesBooked);

@@ -1,0 +1,115 @@
++description(text: "Relay Modern Node Interface")
+
+interface Node {
+  +description(text: "Unique Identity of a Node")
+
+  id: ID!
+}
+
+type Stand implements Node {
+  name: String
+  description: String
+  price: Int
+  rating: Int
+  published: DateTime
+  id: ID!
+}
+
+type Instrument implements Node {
+  name: String
+  description: String
+  price: Int
+  rating: Int
+  published: DateTime
+  id: ID!
+}
+
+type Accessory implements Node {
+  name: String
+  description: String
+  price: Int
+  rating: Int
+  published: DateTime
+  id: ID!
+}
+
+type Misc implements Node, Process {
+  name: String
+  description: String
+  price: Int
+  rating: Int
+  published: DateTime
+  id: ID!
+}
+
+type Item implements Node {
+  name: String
+  description: String
+  price: Int
+  rating: Int
+  published: DateTime
+  id: ID!
+  id: ID!
+  accepted: false
+  requested: false
+  ack: true
+  spawned: true
+  purchasedAt: DateTime
+  transaction: Float
+}
+
+type Query {
+  +description(text: "Relay Modern specification Node fetcher")
+  node(id: ID!): Node
+  +description(text: "Fetch stand with a given id")
+  stand(id: ID!): Stand
+  allStands: [Stand]
+  allInstruments: [Instrument]
+  allAccessories: [Accessory]
+  allMiscs: [Misc]
+}
+
+query StandQuery($id : ID!) {
+  node(id: $id) {
+    __typename
+    id
+    ... on Stand {
+      name
+      description
+      price
+      rating
+    }
+  }
+}
+
+type Mutation {
+  addStand(input: AddStandInput!): AddStandPayload
+  adItem(input: addItemInput!): AddItemPayload
+}
+
+type AddItemPayload {
+  clientMutationId: String
+  stand: Stand
+  item: Item
+}
+
+mutation IF($input: AddItemInput!) {
+  addItem(input: $input) {
+    item {
+      id
+      name
+      description
+      price
+    }
+  }
+}
+
+interface Process {
+  id: ID!
+  accepted: false
+  requested: false
+  ack: true
+  spawned: true
+  purchasedAt: DateTime
+  transaction: Float
+}
